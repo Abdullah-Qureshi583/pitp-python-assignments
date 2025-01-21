@@ -1,3 +1,5 @@
+# ---------------------------------- if-elif-else --------------------------------
+
 # Q6 Write a Python program to calculate the electricity bill based on the following rates:
 # For the first 100 units: $0.50 per unit
 # For the next 100 units: $0.75 per unit
@@ -41,6 +43,8 @@ def isDivisibleBy3or5():
 
 isDivisibleBy3or5()
 
+# ---------------------------------- for Loops --------------------------------
+
 
 # Q8 Write a Python program to print all even numbers between 1 and 50.
 def evenNum1To50():
@@ -75,3 +79,16 @@ def factorial():
 
 
 factorial()
+
+# ---------------------------------- while Loops --------------------------------
+
+
+# Q11 Write a Python program to print numbers from 1 to 10 using a while loop.
+def printNumber1To10():
+    i = 1
+    while i <= 10:
+        print(i)
+        i += 1
+
+
+printNumber1To10()
