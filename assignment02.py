@@ -1,5 +1,4 @@
 # Q6 Write a Python program to calculate the electricity bill based on the following rates:
-
 # For the first 100 units: $0.50 per unit
 # For the next 100 units: $0.75 per unit
 # Above 200 units: $1.20 per unit Calculate the total bill based on user input.
@@ -23,7 +22,7 @@ def calcElectricBill():
     return bill
 
 
-# calcElectricBill()
+calcElectricBill()
 
 
 # Q7 Write a Python program to check if a given number is divisible by 3, 5, both, or neither.
@@ -40,7 +39,7 @@ def isDivisibleBy3or5():
         print(num, " is neither divisible by 3 nor  5.")
 
 
-# isDivisibleBy3or5()
+isDivisibleBy3or5()
 
 
 # Q8 Write a Python program to print all even numbers between 1 and 50.
@@ -49,7 +48,7 @@ def evenNum1To50():
         print(num)
 
 
-# evenNum1To50()
+evenNum1To50()
 
 # Q9 Write a Python program to print the multiplication table for a number provided by the user.
 
@@ -60,4 +59,19 @@ def printMultiplicationTable():
         print(num, "x", i, "=", num * i)
 
 
-# printMultiplicationTable()
+printMultiplicationTable()
+
+
+# Q10 Write a program to find the factorial of a number using a for loop.
+def factorial():
+    ans = 1
+    userNum = int(input("Enter a number: "))
+    if userNum == 0:
+        print("There is no divisible of 0")
+    elif userNum > 1:
+        for i in range(1, userNum + 1):
+            ans *= i
+    print("The divisible of the number", userNum, "is :", ans)
+
+
+factorial()
