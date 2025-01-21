@@ -92,3 +92,20 @@ def printNumber1To10():
 
 
 printNumber1To10()
+
+
+# Q12 Write a program to repeatedly take user input until the user enters a negative number.
+def printUntilNegativeNumber():
+    isTrue = True
+    prompt = "Enter a Negative Number : "
+    while isTrue:
+        num = int(input(prompt))
+        if num >= 0:
+            print("This is the positive number.")
+            prompt = "Try to enter a negative number again : "
+        else:
+            print("You entered the negative number")
+            isTrue = False
+
+
+printUntilNegativeNumber()
