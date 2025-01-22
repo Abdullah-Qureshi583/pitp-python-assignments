@@ -28,16 +28,37 @@ print(is_palindrome("radar"))  # Output: True
 print(is_palindrome("python"))  # Output: False
 
 
-# # 3)Write a function fibonacci_sequence(n) that generates the first n numbers in the Fibonacci sequence as a list.
+# 3)Write a function fibonacci_sequence(n) that generates the first n numbers in the Fibonacci sequence as a list.
 
 
-# def fibonacci_sequence(n):
-#     sequence = [0, 1]
-#     print(sequence[-2])
-#     for i in range(n):
-#         sequence.append(sequence[-1] + sequence[-2])
+def fibonacci_sequence(n):
+    sequence = [0, 1]
+    condition = True
+    print(sequence[-2])
+    while condition:
+        # first condition is to check if the last element is greater than or equal to  n
+        #  the second condition is for if the last one is not grater but after addition of last two elements if it become grater
+        if sequence[-1] <= n and (sequence[-1] + sequence[-2]) <= n:
+            sequence.append(sequence[-1] + sequence[-2])
+        else:
+            condition = False
+    return sequence
 
-#     print(sequence)
+
+sequence = fibonacci_sequence(6)
+print(sequence)  # Output: [0, 1, 1, 2, 3, 5]
 
 
-# fibonacci_sequence(6)  # Output: [0, 1, 1, 2, 3, 5]
+# 4)Write a function is_prime(n) that checks if a given number n is a prime number. Return True if it is prime, otherwise False.
+def is_prime(n):
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+    else:
+        return True
+
+
+print(is_prime(7))  # Output: True
+print(is_prime(10))  # Output: False
+
+
+
